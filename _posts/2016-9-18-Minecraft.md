@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Lets Play Minecraft&#58; Deep Reinforcement Learning WORK IN PROGRESS
+title: Lets Play Minecraft&#58; Deep Reinforcement Learning
 ---
+###TLDR: I trained an AI in Minecraft, transferred it to a real robot, and ended up with a simple autonomous vehicle.
 ## Project Malmo
 The Malmo platform is a sophisticated AI experimentation platform built on top of Minecraft, and designed to support fundamental research in artificial intelligence. This is super cool. Minecraft is an intuitive tool for quickly modeling an environment. We will be modeling a simple line for an agent to follow.
 
@@ -166,10 +167,14 @@ This is the code which is run every timestep. A lot of the syntax was difficult 
 
 All of the code can be found on [Github](). 
 
+
 ## Results
 The end results are pretty good. The agent cuts corners, but it is clear that it is indeed following the line consistently. It only takes about an hour to achieve decent results with a GPU. I am sure the agent will only get better if you are more patient than I am. 
 
-Need to add the video
+## The real world
+The agent worked well enough in Minecraft that I wanted to test it out it real life. I built a simple Lego robot and attached my phone to it. The phone takes pictures of the track and sends it to my computer. The computer processes the image and runs it through the model we trained in Minecraft. The result is then sent to the robot and the appropriate action is taken. Miraculously this actually worked without any modifications to the model. The robot is forced to move very slowly due to communication lag. The results are good enough for me though. I trained an AI in Minecraft, transferred it to a real robot, and ended up with a simple autonomous vehicle.
+
+<img src="/assets/minecraft/robot.gif" alt="Drawing" style="width: 300px; display: block; margin: 0 auto;"/>
 
 ## Final Thoughts
 
