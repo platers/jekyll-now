@@ -2,7 +2,7 @@
 layout: post
 title: Lets Play Minecraft&#58; Deep Reinforcement Learning
 ---
-###TLDR: I trained an AI in Minecraft, transferred it to a real robot, and ended up with a simple autonomous vehicle.
+TLDR: I trained an AI in Minecraft, transferred it to a real robot, and ended up with a simple autonomous vehicle.
 ## Project Malmo
 The Malmo platform is a sophisticated AI experimentation platform built on top of Minecraft, and designed to support fundamental research in artificial intelligence. This is super cool. Minecraft is an intuitive tool for quickly modeling an environment. We will be modeling a simple line for an agent to follow.
 
